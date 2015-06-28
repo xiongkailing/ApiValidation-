@@ -1,0 +1,51 @@
+﻿@model $rootnamespace$.Models.Token
+
+@{
+    ViewBag.Title = this.Model.ThirdPartName + "Details";
+    Layout = "~/Views/Shared/TokenLayout.cshtml";
+}
+
+<h2> @this.Model.ThirdPartName Details</h2>
+
+<div>
+    <h4>Token</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SecretToken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecretToken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenToken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OpenToken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThirdPartName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThirdPartName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telphone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telphone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("编辑", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("返回列表页", "Index")
+</p>

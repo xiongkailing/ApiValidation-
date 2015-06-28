@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>TokenValidate</id>
+    <version>1.0.0</version>
+    <authors>xiongkailing</authors>
+    <owners>xiongkailing</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>token管理者视图 以及 token验证过滤器Controller 及ApiController的实现
+需要配置连接字符串</description>
+    <copyright>xiongkailing</copyright>
+    <language>zh-CN</language>
+  </metadata>
+</package>
